@@ -27,8 +27,6 @@ TOP_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 REQUIREMENTS_FILE ?= requirements.txt
 ENVIRONMENT_FILE ?= environment.yml
 
--include third_party/make-env/conda.mk
-
 define install_plugin =
 .PHONY: $(1).so
 $(1).so:
